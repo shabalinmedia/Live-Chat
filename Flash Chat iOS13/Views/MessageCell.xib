@@ -11,21 +11,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="69" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="325" height="69"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="198" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="511" height="198"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="325" height="69"/>
+                <rect key="frame" x="0.0" y="0.0" width="511" height="198"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hqA-9Z-juX">
-                        <rect key="frame" x="10" y="10" width="305" height="49"/>
+                        <rect key="frame" x="10" y="10" width="491" height="178"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="uEe-N5-HSS">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6dt-ha-1P7"/>
+                                    <constraint firstAttribute="width" constant="40" id="cTA-cO-1hN"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3f-jM-Cth">
-                                <rect key="frame" x="0.0" y="0.0" width="245" height="49"/>
+                                <rect key="frame" x="60" y="0.0" width="371" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF7-AO-VOo">
-                                        <rect key="frame" x="10" y="10" width="225" height="29"/>
+                                        <rect key="frame" x="10" y="10" width="351" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="BrandLightPurple"/>
                                         <nil key="highlightedColor"/>
@@ -40,7 +47,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="bSz-QC-UXR">
-                                <rect key="frame" x="265" y="0.0" width="40" height="40"/>
+                                <rect key="frame" x="451" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="nlp-e0-29q"/>
                                     <constraint firstAttribute="height" constant="40" id="o82-fm-48Q"/>
@@ -59,14 +66,16 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="dF7-AO-VOo" id="sdA-4I-V2S"/>
+                <outlet property="leftImageView" destination="uEe-N5-HSS" id="ePF-GI-HGG"/>
                 <outlet property="messageBubble" destination="b3f-jM-Cth" id="wxH-Zg-Otg"/>
                 <outlet property="rightImageView" destination="bSz-QC-UXR" id="lTP-AW-lxm"/>
             </connections>
-            <point key="canvasLocation" x="141.30434782608697" y="112.16517857142857"/>
+            <point key="canvasLocation" x="6.5217391304347831" y="155.35714285714286"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
         <namedColor name="BrandLightPurple">
             <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
